@@ -1,0 +1,27 @@
+proxies:
+- name: xc sg melbicom
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: e97cb807-3d2b-4ebe-ac77-89f0e4ddab07
+  udp: true
+  sni: sg-trojan-vvip-2.netspeed.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/websocket-trojan"
+    headers:
+      Host: sg-trojan-vvip-2.netspeed.my.id
+- name: xc sg melbicom wilcard
+  server: support.zoom.us
+  port: 443
+  type: trojan
+  password: e97cb807-3d2b-4ebe-ac77-89f0e4ddab07
+  network: ws
+  sni: support.zoom.us.sg-trojan-vvip-2.netspeed.my.id
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /websocket-trojan
+    headers:
+      Host: support.zoom.us.sg-trojan-vvip-2.netspeed.my.id
