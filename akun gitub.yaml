@@ -1,14 +1,3 @@
 proxies:
 - name: akun gitub
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: e97cb807-3d2b-4ebe-ac77-89f0e4ddab07
-  udp: true
-  sni: sg-trojan-vvip-2.netspeed.my.id
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: "/websocket-trojan"
-    headers:
-      Host: sg-trojan-vvip-2.netspeed.my.id
+
